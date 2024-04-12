@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- <link rel="icon" href="/favicon.png" type="image/png">  -->
+
+    <script src="https://kit.fontawesome.com/b7b2a7db6a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <main class="corpo">
+
+        <form class="corpo__cartao__principal">
+
+            <section class="cartao__principal__header">
+                <h1 class="header__titulo">Formulario de interesse - BASF</h1>
+                <img src="docs/logo.v1.svg" alt="" srcset="" class="header__logo">
+            </section>
+
+            <section class="cartao__principal__main">
+
+                <section class="cartao__principal__info__cliente">
+
+                    <div class="cartao__main__campo">
+
+                        <h2 class="campo__titulo campo__obrigatorio__texto">Nome</h2>
+
+                        <div class="campo__secao__input">
+                            <input id="nome" class="campo__input campo__obrigatorio"
+                                placeholder="Digite aqui o seu nome">
+                        </div>
+
+                    </div>
+
+                    <div class="cartao__main__campo">
+
+                        <h2 class="campo__titulo campo__obrigatorio__texto">Sobrenome</h2>
+
+                        <div class="campo__secao__input">
+                            <input id="sobrenome" class="campo__input campo__obrigatorio"
+                                placeholder="Digite aqui o seu sobrenome">
+                        </div>
+
+                    </div>
+
+                    <div class="cartao__main__campo">
+
+                        <h2 class="campo__titulo campo__obrigatorio__texto">Email</h2>
+
+                        <div class="campo__secao__input">
+                            <input id="email" type="text" class="campo__input campo__obrigatorio"
+                                placeholder="Digite aqui o seu email">
+                        </div>
+
+                    </div>
+
+                    <div class="cartao__main__campo">
+
+                        <h2 class="campo__titulo">Telefone</h2>
+
+                        <div class="campo__secao__input">
+                            <input id="telefone" type="text" class="campo__input"
+                                placeholder="Digite aqui o seu telefone">
+                        </div>
+
+                    </div>
+
+                    <div class="cartao__main__campo">
+
+                        <h2 class="campo__titulo">Cidade</h2>
+
+                        <div class="campo__secao__input">
+                            <input id="cidade" type="text" class="campo__input"
+                                placeholder="Digite aqui a sua cidade">
+                        </div>
+
+                    </div>
+
+                    <div class="cartao__main__campo cartao__main__campo--volume">
+
+                        <h2 class="campo__titulo">Volume</h2>
+
+                        <div class="campo__secao__input campo__secao__input--volume">
+                            <button type="button" class="campo__secao__button button__menos">-</button>
+                            <input id="volume" type="text" class="campo__input campo__input--volume"
+                                placeholder="Digite aqui o volume de">
+                            <button type="button" class="campo__secao__button button__mais">+</button>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="cartao__main__produtos__pergunta">
+
+                    <h2 class="produtos__titulo">Sabe qual produto utilizar?</h2>
+
+                    <div class="produtos__pergunta__secao__input">
+                        <input class="produtos__pergunta__input" type="radio" id="respostaProdutoAfirmativa">
+                        <label class="produtos__pergunta__label" for="respostaProdutoAfirmativa">Sim, sei qual produto
+                            utilizar</label>
+                    </div>
+
+                    <div class="produtos__pergunta__secao__input">
+                        <input class="produtos__pergunta__input" type="radio" id="respostaProdutoNegativa" checked>
+                        <label class="produtos__pergunta__label" for="respostaProdutoNegativa">Não, preciso de ajuda
+                            para escolher meu
+                            produto</label>
+                    </div>
+
+                </section>
+
+                <section class="cartao__main__descrever__finalidade active">
+                    <label class="descrever__finalidade__titulo campo__obrigatorio__texto" for="descricaoFinalidade">Descreva para qual finalidade está precisando </label>
+                    <textarea class="descrever__finalidade__input" id="descricaoFinalidade" rows="4" cols="50"></textarea>
+                </section>
+
+                <section class="cartao__main__selecionar__produtos">
+
+                    <h2 class="selecionar__produtos__titulo">Selecione o seu produto</h2>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="texaponS2">
+                        <label for="opcao1">Texapon S 2</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="eumulginCO4O">
+                        <label for="opcao1">Eumulgin CO 4O</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="plantacare2000UP">
+                        <label for="opcao1">Plantacare 2000 UP</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="plantacare1200UP">
+                        <label for="opcao1">Plantacare 1200 UP</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="texaponSBN">
+                        <label for="opcao1">Texapon SBN</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="myritol312LB">
+                        <label for="opcao1">Myritol 312 LB</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="uvinulMC80">
+                        <label for="opcao1">Uvinul MC 80</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="plantaren1200N">
+                        <label for="opcao1">Plantaren 1200 N</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="jordaponSCIPowder">
+                        <label for="opcao1">Jordapon SCI Powder</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="lamesoftPO65">
+                        <label for="opcao1">Lamesoft PO 65</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="uvinulAPlusGranular">
+                        <label for="opcao1">Uvinul A Plus Granular</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="cetiolAB">
+                        <label for="opcao1">Cetiol AB</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="myritol312">
+                        <label for="opcao1">Myritol 312</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="cetiolCC">
+                        <label for="opcao1">Cetiol CC</label>
+                    </div>
+
+                    <div class="selecionar__produtos__secao__input">
+                        <input type="checkbox" id="tinosorbM">
+                        <label for="opcao1">Tinosorb M</label>
+                    </div>
+
+                </section>
+
+                <section class="cartao__main__termos__privacidade__section">
+                    <input class="termos__privacidade__input" type="checkbox" id="termosPrivacidade">
+                    <label class="termos__privacidade__label campo__obrigatorio__texto" for="termosPrivacidade">Estou de acordo com a política de
+                        privacidade</label>
+                </section>
+
+                <p class="cartao__main__message__error campo__obrigatorio__texto">Preencha os campos obrigatórios. </p>
+                <button class="cartao__main__botao__submeter">Submeter</button>
+                
+                <p class="cartao__main__message__submit__success">Dados enviados com sucesso.</p>
+                <p class="cartao__main__message__submit__error">Não foi possivel enviar os dados, tente novamente.</p>
+
+                <div class="lds-dual-ring" id="loading"></div>
+
+
+            </section>
+
+        </form>
+
+    </main>
+
+    <script src="/js/formularioAcoes.js"></script>
+
+</body>
+
+</html>

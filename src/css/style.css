@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.corpo {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f5;
+}
+
+.corpo__cartao__principal {
+    background-color: #fff;
+    width: 75vw;
+    height: min-content;   
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-top: 80px;
+}
+
+.cartao__principal__header {
+    grid-row: 1;
+    display: flex;
+    background-color: #018249;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.header__titulo {
+    color: white;
+    font-size: 18px;
+    justify-self: flex-start;
+}
+
+.cartao__principal__main {
+    display: grid;
+    row-gap: 18px;
+    padding: 20px;
+    display: grid;
+    justify-content: flex-start;
+}
+
+.cartao__principal__info__cliente {
+    display: grid;
+    row-gap: 24px;
+    grid-template-columns: auto auto;
+    column-gap: 12px;
+}
+
+.cartao__main__campo {
+    width: 330px;
+    height: min-content;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 4px;
+}
+
+.campo__titulo {
+    font-weight: bold;
+}
+
+.campo__obrigatorio__texto::after {
+    content: '*';
+    color: #CC3333;
+    margin-left: 2px;
+}
+
+.campo__secao__input {
+    transition: all .25s ease;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 24px;
+    overflow: hidden;
+    display: flex;
+}
+
+.campo__secao__input.error {
+    transition: all .25s ease;
+    border: 1px solid red;
+}
+
+.campo__input {
+    width: 100%;
+    padding: 0px 4px;
+}
+
+.cartao__main__campo--volume {
+    width: min-content;
+}
+
+.campo__secao__input--volume {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto 1fr auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: min-content;
+}
+
+.campo__input--volume {
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    overflow: hidden;  
+    width: 135px;                     
+}
+
+.campo__secao__button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    height: min-content;
+}
+
+.cartao__main__produtos__pergunta {
+    grid-column: 1 /span 2;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    row-gap: 12px;
+}
+
+.produtos__titulo {
+    grid-row: 1;
+    grid-template-columns: 1 /span 2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.produtos__pergunta__secao__input {
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+}
+
+.produtos__pergunta__input {
+    margin: 0px 4px 1px 0px;
+}
+
+.cartao__main__descrever__finalidade {
+    display: none;
+    grid-template-rows: auto auto;
+    row-gap: 14px;
+}
+.cartao__main__descrever__finalidade.active {
+    display: grid;
+}
+
+.descrever__finalidade__input.error {
+    transition: all .25s ease;
+    border: 1px solid red;
+}
+
+.descrever__finalidade__titulo {
+    font-weight: bold;
+}
+
+.cartao__main__selecionar__produtos {
+    display: none;
+    grid-template-columns: auto auto auto;
+    row-gap: 14px;
+    column-gap: 14px;
+}
+
+.cartao__main__selecionar__produtos.active {
+    display: grid;
+}
+
+.selecionar__produtos__secao__input {
+    display: flex;
+    align-items: center;
+}
+
+.selecionar__produtos__titulo {
+    grid-column: 1 /span 3;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cartao__main__termos__privacidade__section {
+    display: flex;
+    align-items: center;
+    grid-column: 1 /span 2;
+}
+
+.termos__privacidade__input {
+    margin: 0px 4px 1px 0px;
+}
+
+.termos__privacidade__label.error {
+    color: #CC3333;
+}
+
+.cartao__main__botao__submeter {
+    width: min-content;
+    padding: 8px 12px;
+    color: #FFF;
+    background-color: #CC3333;
+    border: 1px solid #CC3333;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    grid-column: 1 /span 2;
+    transition: all .25s ease;
+}
+
+.cartao__main__botao__submeter.disabled {
+    transition: all .25s ease;
+    cursor: auto;
+    background-color: #A07070;
+    border: 1px solid #A07070;
+}
+
+.cartao__main__message__error {
+    display: none;
+    grid-column: 1 /span 2;
+    color: red;
+}
+
+.cartao__main__message__error.active {
+    display: block;
+}
+
+.lds-dual-ring {
+    margin-left: 10px;
+    display: block;
+    width: 80px;
+    align-self: flex-start;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: none;
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    border: 2px solid #CC3333;
+    border-color: #CC3333 transparent #CC3333 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.lds-dual-ring.active:after {
+    display: block;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cartao__main__message__submit__success {
+    color: #018249;
+    grid-column: 1 /span 2;
+    display: none;
+}
+
+.cartao__main__message__submit__success.active {
+    display: block;
+}
+
+.cartao__main__message__submit__error {
+    color: #CC3333;
+    grid-column: 1 /span 2;
+    display: none;
+}
+
+.cartao__main__message__submit__error.active {
+    display: block;
+}
+
+
+@media screen and (max-width: 768px) and (max-height: 870px) {
+    /* Estilos que serão aplicados quando a largura for maior ou igual a 768px e a altura for maior ou igual a 870px */
+    .corpo__cartao__principal {
+        width: 100vw;
+        margin-top: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartao__principal__info__cliente{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartao__main__campo {
+        width: auto;
+    }
+
+    .cartao__main__selecionar__produtos.active{
+        grid-template-columns: auto auto;
+    }
+    .selecionar__produtos__titulo {
+        grid-column: 1 /span 2;
+    }
+}
